@@ -1,7 +1,18 @@
 aid: circle-asia
 name: Circle Asia
-description: Circle Asia is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Circle Asia Technologies is a Singapore-headquartered consumer fintech (offices
+  at 68 Circular Road, Singapore, and Ho Chi Minh City, Vietnam) behind the Circle
+  app and the VPBank Circle PayLater credit card, a digital buy-now-pay-later card
+  issued in partnership with Vietnam Prosperity Joint Stock Commercial Bank (VPBank).
+  The product lets consumers onboard with only an ID and phone number, waives the
+  lifetime annual fee, and pairs a physical and virtual card with AI-assisted expense
+  management, spending limits, one-tap card lock, biometric (face/fingerprint)
+  authentication, and real-time SMS/app transaction alerts. The company is PCI DSS
+  v4.0.1 certified and Visa-compliant, ships native iOS and Android apps, and is
+  backed by 500 Global. Circle Asia is a consumer application company with no public
+  developer API; this profile captures its identity, security posture, and
+  compliance claims for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/circle-asia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +20,31 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://static.wixstatic.com/media/d9a4dd_c7c2e84652e04a14ae768d27a9eedf27~mv2.png
 tags:
 - Company
+- Fintech
+- Payments
+- Credit Cards
+- Buy Now Pay Later
+- Consumer Finance
+- Mobile Banking
+- Vietnam
+- Southeast Asia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/circle-asia-domain-security.yml
 - type: Website
   url: https://getcircle.ai
+- type: Support
+  url: mailto:hello@getcircle.ai
+- type: HelpCenter
+  url: https://www.getcircle.ai/faq
+- type: Compliance
+  url: https://www.getcircle.ai/baomat
+- type: Conformance
+  url: conformance/circle-asia-conformance.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.getcircle.ai/baomat
+notes: >-
+  Circle Asia publishes no public developer API or OpenAPI, so cross-cutting API
+  standards (oauth2, oidc, rfc9457, pagination, idempotency) cannot be derived.
+  The standards asserted below are the compliance/certification claims the
+  provider publishes on its consumer security page.
+standards:
+- id: pci-dss
+  version: v4.0.1
+  conforms: true
+  evidence: PCI DSS v4.0.1 certification badge published on the security page
+    (https://www.getcircle.ai/baomat)
+- id: visa-security
+  conforms: true
+  evidence: Visa security compliance badge published on the security page
+    (https://www.getcircle.ai/baomat)
+- id: oauth2
+  conforms: false
+  evidence: no public API / OpenAPI declaring oauth2 securitySchemes
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no public API / OpenAPI
